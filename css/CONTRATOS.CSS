@@ -1,0 +1,414 @@
+/*adregamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@media (max-width: 991px){
+    Body{
+           padding:30px;
+        }
+    Form{
+          Width:340px;
+       }
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio .contenido header{
+    background-color: rgb(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: #852424;
+}
+
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: #c0392b;
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: #c0392b;
+}
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span{
+    font-size: 25px;
+    color: #852424;
+}
+
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover{
+    background-color: #852424;
+}
+
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
+header {
+    background-color: #16075a;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #16075a;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* Estilos generales para la sección */
+.servicios-section {
+    padding: 120px 20px;
+    background: linear-gradient( #16075a, #333, #852424); /* Fondo degradado */
+    text-align: center; /* Centrar texto */
+    color: white; /* Color del texto */
+}
+
+
+/* Estilos para la cuadrícula de servicios */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Cuadrícula responsiva */
+    gap: 30px; /* Espaciado entre elementos */
+}
+
+/* Estilos para cada servicio */
+.servicio-item {
+    position: relative; /* Para posicionar el texto */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Para ocultar parte que sobresale */
+}
+
+/* Estilos para el contenedor de imagen */
+.image-wrapper {
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.image-wrapper img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantener proporciones */
+    transition: transform 0.3s; /* Transición para efecto */
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05); /* Escalar imagen al pasar el ratón */
+}
+
+/* Estilos para la superposición de texto */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    color: white; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el título de cada servicio */
+h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+/* Estilos para la descripción de cada servicio */
+p {
+    font-size: 1em;
+    line-height: 1.4; /* Espaciado entre líneas */
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.2em; /* Ajustar tamaño del título en pantallas pequeñas */
+    }
+}
+
+
+
+.background {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f595a5, #d6dffd); /* Combinación de colores atractiva */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.95); /* Fondo blanco con algo de transparencia */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #852424;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Fuente elegante */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #852424;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #16075a;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa; /* Color del placeholder */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #16075a;
+    box-shadow: 0 0 5px rgba(126, 30, 30, 0.5);
+}
+
+button {
+    background-color: #16075a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #16075a;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo del pie de página estilizado */
+.footer {
+    background: linear-gradient(135deg, #282850, #241274,#852424); /* Gradiente azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex-basis: 22%;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #852424; /* Línea decorativa azul */
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 1em;
+    color: #e0e0e0;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #852424; /* Efecto hover azul */
+    padding-left: 10px;
+}
+
+.footer-section .social-icons a {
+    font-size: 1.6em;
+    color: #ffffff;
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    color: #852424; /* Efecto hover azul */
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    font-size: 0.9em;
+    color: #e0e0e0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
